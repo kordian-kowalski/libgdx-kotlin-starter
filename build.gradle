@@ -1,5 +1,7 @@
 plugins {
+    // Needed to use Kotlin in the project
     id 'org.jetbrains.kotlin.jvm' version '1.3.11'
+    // Allows us to package the application and run it with `gradlew run`
     id 'application'
 }
 
@@ -8,25 +10,41 @@ repositories {
 }
 
 application {
+    // Name of the class that contains the main() function
+    // For Kotlin, use the name of the file that contains the main() function appended with "Kt"
+    // (so, Main.kt becomes MainKt)
+    // If you need to move this to a package it is fine to also prepend the package name here:
+    // my.package.MainKt
     mainClassName = "MainKt"
 }
 
 ext {
+    // You can change this to use whatever version of GDX and KTX you may need
     gdxVersion = '1.9.9'
     ktxVersion = '1.9.8-b5'
 }
 
 dependencies {
+    ///// Kotlin /////
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    // LibGDX
+
+    ///// LibGDX /////
     compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+
+    ///// LibGDX Desktop libraries /////
     compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
     compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
-    // KTX
+
+    ///// KTX /////
     compile "io.github.libktx:ktx-app:$ktxVersion"
-    // Extras
+
+    ///// KTX Extras /////
     //compile "io.github.libktx:ktx-actors:$ktxVersion"
-    //compile "io.github.libktx:ktx-box2d:$ktxVersion"
     //compile "io.github.libktx:ktx-async:$ktxVersion"
     //compile "io.github.libktx:ktx-style:$ktxVersion"
+
+    ///// GDX Extras /////
+    // Box2D
+    //compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+    //compile "io.github.libktx:ktx-box2d:$ktxVersion"
 }
