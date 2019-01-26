@@ -16,6 +16,6 @@ Run `gradlew run` in terminal in the project directory.
 ## Disclaimer
 Yes, there are a lot of unconfigured options: Java, tests, IDEA / eclipse plugins, probably more.
 
-This is only meant to be a barebones starter script for geting a LibGDX project going under Kotlin.
+This is only meant to be a barebones starter script for getting a LibGDX project going under Kotlin.
 
 This also demonstrates how little configuration is needed to get a project like this to build and run with Gradle.
