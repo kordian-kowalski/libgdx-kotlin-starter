@@ -10,8 +10,21 @@ Minimalistic Gradle starter configuration for a LibGDX project using Kotlin and 
 
 Alternatively you can choose to import a Gradle project directly which will achieve the same thing.
 
+Your Kotlin code should live in the `src/main/kotlin` directory.
+
 ## Running the project
 Run `gradlew run` in terminal in the project directory.
+
+## Resources
+Place your resources in `src/main/resources`.
+They can be accessed with `Gdx.files.internal(<path>)`
+
+
+## Dependencies
+All dependencies are in the `build.gradle` file. Some suggested dependencies are listed but commented out - if you
+want to include them (recommended), just uncomment them.
+
+You can also add your own dependencies following the same pattern.  
 
 ## Disclaimer
 Yes, there are a lot of unconfigured options: Java, tests, IDEA / eclipse plugins, probably more.
