@@ -39,6 +39,7 @@ dependencies {
     compile "io.github.libktx:ktx-app:$ktxVersion"
 
     ///// KTX Extras /////
+    //compile "io.github.libktx:ktx-scene2d:$ktxVersion"
     //compile "io.github.libktx:ktx-actors:$ktxVersion"
     //compile "io.github.libktx:ktx-async:$ktxVersion"
     //compile "io.github.libktx:ktx-style:$ktxVersion"
