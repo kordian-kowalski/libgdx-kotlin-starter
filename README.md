@@ -19,6 +19,7 @@ Run `gradlew run` in terminal in the project directory.
 Place your resources in `src/main/resources`.
 They can be accessed with `Gdx.files.internal(<path>)`
 
+The default LibGDX UI skin is already included in the `skin` directory.
 
 ## Dependencies
 All dependencies are in the `build.gradle` file. Some suggested dependencies are listed but commented out - if you
